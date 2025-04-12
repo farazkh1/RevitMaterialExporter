@@ -26,7 +26,6 @@ This process involves installing files in two places: your Documents folder (tem
 
 **1. Run the Installer:**
 
-*   Go to the **[Releases](link-to-your-github-releases-page)** section of this repository.
 *   Download the `RevitMaterialExporterSetup-v1.0.0.msi` file.
 *   Double-click the `.msi` file to run the installer.
 *   Follow the simple setup prompts (Click Next -> Install -> Finish).
@@ -48,7 +47,6 @@ This process involves installing files in two places: your Documents folder (tem
 
 **3. Install Unity Package:**
 
-*   Go to the **[Releases](link-to-your-github-releases-page)** section again.
 *   Download the `RevitContextProcessor_v1.0.0.unitypackage` file (or similar name).
 *   Open your Unity Project (must use Standard RP, or edit script for URP/HDRP).
 *   Go to the Unity menu: `Assets -> Import Package -> Custom Package...`.
@@ -61,13 +59,12 @@ This process involves installing files in two places: your Documents folder (tem
     *   Open your Revit project and a relevant 3D View.
     *   Go to `Add-Ins` tab -> `External Tools`.
     *   Click the "Revit Material Exporter" button.
-    *   A folder browser dialog will appear. **Select the BASE FOLDER** where you want to save the export files for *this specific project* (e.g., `D:\UnityProjects\MyBuilding\RevitExportData`).
-    *   The plugin will automatically create `materials.json` and a `Textures` subfolder inside the location you selected.
+    *   The plugin will automatically create `materials.json` and a `Textures` subfolder inside your main **Documents** folder.
 2.  **Revit (FBX):**
     *   Go to `File -> Export -> FBX`.
-    *   Save the FBX file **inside the same BASE FOLDER** you selected in the previous step.
+    *   Save the FBX file **inside the same BASE FOLDER** in the previous step.
 3.  **Unity:**
-    *   Drag the entire **BASE FOLDER** (containing `materials.json`, `Textures`, and your `.fbx`) from Windows Explorer into your Unity Project's `Assets` window.
+    *   Drag the entire **BASE FOLDER** (containing `materials.json`, `Textures`, and your `.fbx`) into your Unity Project's `Assets` window.
     *   Wait for import.
     *   **Select the imported FBX asset**, go to Inspector -> Model tab, check **`Read/Write Enabled`**, click Apply.
     *   If using normal maps, configure their `Texture Type` in the Inspector.
