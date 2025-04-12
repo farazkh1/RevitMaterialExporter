@@ -1,4 +1,4 @@
-# Revit to Unity Material & Context Exporter (Works only on Revit 2025)
+# Revit to Unity Material & Context Exporter (Works only with Revit 2025)
 
 **Developed by:** Faraz Khojasteh Far
 **License:** MIT License (See LICENSE file)
